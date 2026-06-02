@@ -111,4 +111,4 @@ This application implements a sliding window rate limiter via Upstash Redis.
 
 ## License
 
-Distributed under the ISC License.
+Distributed under the MIT License.
