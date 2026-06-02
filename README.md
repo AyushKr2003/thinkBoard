@@ -1,6 +1,8 @@
-# Note MERN Application
+# Note MERN Application (ThinkBoard)
 
 A professional, full-stack note-taking application built with the MERN stack (MongoDB, Express, React, Node.js). This project features a modern responsive UI, persistent storage, and integrated rate limiting for API security.
+
+**Live Demo**: [https://thinkboard-3g04.onrender.com/](https://thinkboard-3g04.onrender.com/)
 
 ## Features
 
@@ -10,6 +12,7 @@ A professional, full-stack note-taking application built with the MERN stack (Mo
 - **API Rate Limiting**: Security layer using Upstash Redis to prevent API abuse (5 requests per 10 seconds).
 - **Responsive Design**: Fully functional across desktop, tablet, and mobile devices.
 - **Dynamic Routing**: Seamless navigation with React Router 7.
+- **Production Ready**: Optimized build process and Express 5 routing configuration.
 
 ## Tech Stack
 
@@ -37,7 +40,7 @@ A professional, full-stack note-taking application built with the MERN stack (Mo
 
 ### 1. Clone the repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/AyushKr2003/thinkBoard.git
 cd note_mern
 ```
 
@@ -62,6 +65,7 @@ PORT=5001
 MONGO_URI=your_mongodb_connection_string
 UPSTASH_REDIS_REST_URL=your_upstash_redis_url
 UPSTASH_REDIS_REST_TOKEN=your_upstash_redis_token
+NODE_ENV=development
 ```
 
 ## Running the Application
@@ -79,6 +83,14 @@ cd frontend
 npm run dev
 ```
 The application will be available at `http://localhost:5173`.
+
+## Deployment (Render)
+
+The project is configured for easy deployment on Render.
+
+1.  **Build Command**: `npm run build` (Run from the root directory)
+2.  **Start Command**: `npm start` (Run from the root directory)
+3.  **Environment Variables**: Set `MONGO_URI`, `UPSTASH_REDIS_REST_URL`, `UPSTASH_REDIS_REST_TOKEN`, and `NODE_ENV=production` in the Render dashboard.
 
 ## API Endpoints
 
